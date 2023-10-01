@@ -26,8 +26,14 @@
 </section>
 
 <script>
-    document.querySelector('input').addEventListener("keypress",function () {
+    document.querySelector('input').addEventListener("keyup",function () {
     document.querySelector('div:nth-child(1)>h1').innerText= document.querySelector('input').value;
+});
+document.querySelector('input').addEventListener("keyDown",function () {
+    document.querySelector('div:nth-child(1)>h1').innerText= document.querySelector('input').value;
+});
+document.querySelector('button').addEventListener("click",function () {
+    document.querySelector('div:nth-child(1)>h1').style.color= "red";
 });
     //Case One
     //Bind an event for Change Text Btn
